@@ -68,23 +68,20 @@ public class SearchBox {
 
 
 
-// Type into search box
+
         WebElement searchBox = driver.findElement(By.id("menuSelect"));
         searchBox.sendKeys("Open");
 
-// Wait for Dojo suggestion list to appear
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector(".dijitMenuItem")
         ));
 
-// Capture all suggestions
         List<WebElement> suggestions = driver.findElements(
                 By.cssSelector(".dijitMenuItem")
         );
 
         System.out.println("Total Suggestions: " + suggestions.size());
 
-// Print each suggestion text
         for (WebElement s : suggestions) {
             System.out.println("Suggestion: " + s.getText());
         }
