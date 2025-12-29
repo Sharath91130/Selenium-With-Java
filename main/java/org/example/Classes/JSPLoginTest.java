@@ -12,6 +12,7 @@ public class JSPLoginTest {
     public void testLoginJSP() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 
         driver.get("https://modus.ad.modus.com:34000/fininfra/ui/SSOLogin.jsp");
@@ -87,10 +88,7 @@ public class JSPLoginTest {
         }
 
 
-        Select select = new Select(dropdown);
-        select.selectByVisibleText("CRM");
 
-        System.out.println("CRM selected successfully!");
 
 
         try {

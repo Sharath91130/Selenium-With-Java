@@ -14,12 +14,20 @@ public class LinkTextAndPartialText {
 
     public static void main(String[] args) {
 
+//
+//        WebDriver driver=new ChromeDriver();
+//        driver.get("https://testautomationpractice.blogspot.com/");
+//
+//
+//        driver.findElement(By.linkText("Download Files")).click();
+//
 
-        WebDriver driver=new ChromeDriver();
-        driver.get("https://testautomationpractice.blogspot.com/");
+        String s="hello";
+        String b="hello";
 
+        String m=new String("hello");
+        System.out.println(s==m);
 
-        driver.findElement(By.linkText("Download Files")).click();
 
 
     }
